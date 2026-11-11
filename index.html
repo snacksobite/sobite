@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>SoBite Snack – Satu Gigitan, Berjuta Rasa</title>
+<meta name="description" content="Snack toples premium dari dua orang yang nekat membangun usaha. Pesan lewat Shopee dan Tokopedia.">
+<link rel="icon" href="img/logo.jpeg">
+<style>
+:root{--ora:#e8651f;--cok:#3b1f0e;--kraft:#f2dfbb;--krem:#fbf0d9;--kuning:#f5b82e;--teal:#2f7f86;--tomat:#c9402a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.65 Georgia,"Times New Roman",serif;color:var(--cok);background:var(--kraft);
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+h1,h2,h3{font-family:"Trebuchet MS","Segoe UI",sans-serif;line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:.4em}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+section{padding:84px 0}
+nav{position:sticky;top:0;z-index:20;background:var(--cok);color:var(--krem)}
+nav .wrap{display:flex;align-items:center;gap:20px;padding:8px 22px;flex-wrap:wrap}
+nav img{width:44px;height:44px;border-radius:50%}
+nav b{font:800 1.15rem "Trebuchet MS",sans-serif;margin-right:auto}
+nav a{text-decoration:none;font:600 .95rem "Trebuchet MS",sans-serif;padding:4px 2px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--kuning)}
+.btn{display:inline-block;text-decoration:none;font:800 1rem "Trebuchet MS",sans-serif;padding:13px 22px;border:3px solid var(--cok);border-radius:14px 22px 16px 24px;background:var(--kuning);box-shadow:4px 4px 0 var(--cok);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--cok)}
+.btn.o{background:var(--ora);color:#fff}.btn.t{background:var(--teal);color:#fff}
+.hero{background:var(--ora);color:#fff;padding:60px 0 90px;position:relative;clip-path:polygon(0 0,100% 0,100% 94%,50% 100%,0 94%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);text-shadow:3px 3px 0 var(--cok)}
+.hero p{font-size:1.2rem;margin:18px 0 26px;max-width:30em}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap}
+.polar{background:var(--krem);padding:12px 12px 36px;border-radius:4px;box-shadow:0 10px 24px rgba(59,31,14,.35);position:relative;color:var(--cok)}
+.polar::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(245,184,46,.8);transform:rotate(-3deg)}
+.polar figcaption{position:absolute;bottom:8px;left:0;right:0;text-align:center;font:italic 1rem Georgia,serif}
+.hero .polar{transform:rotate(3deg);animation:goyang 5s ease-in-out infinite}
+.logo-s{position:absolute;width:110px;right:-14px;bottom:-34px;border-radius:50%;box-shadow:0 6px 14px rgba(0,0,0,.4);transform:rotate(-10deg)}
+@keyframes goyang{50%{transform:rotate(1deg) translateY(-8px)}}
+.bub{position:absolute;background:#fff;color:var(--cok);border:3px solid var(--cok);border-radius:18px;padding:6px 12px;font:700 .85rem "Trebuchet MS",sans-serif;top:-18px;left:-22px;transform:rotate(-5deg)}
+.cerita{background:var(--krem)}
+.cerita>.wrap>p.lead{max-width:36em;margin-bottom:46px;font-size:1.15rem}
+.rel{position:relative;padding-left:64px}
+.rel::before{content:"";position:absolute;left:21px;top:0;bottom:0;border-left:4px dashed var(--ora)}
+.scoot{position:absolute;left:0;top:0;font-size:2.4rem;transition:top .15s linear;z-index:2;filter:drop-shadow(2px 2px 0 rgba(59,31,14,.3))}
+.bab{display:grid;grid-template-columns:1fr 250px;gap:26px;align-items:center;margin-bottom:56px;opacity:0;transform:translateX(-26px) rotate(-1.5deg);transition:opacity .7s,transform .7s}
+.bab.in{opacity:1;transform:none}
+.bab:nth-of-type(even){transform:translateX(26px) rotate(1.5deg)}.bab.in:nth-of-type(even){transform:none}
+.bab h3{font-size:1.6rem;margin-bottom:6px}
+.bab .tag{display:inline-block;background:var(--kuning);padding:2px 12px;border-radius:12px;font:700 .85rem "Trebuchet MS",sans-serif;margin-bottom:8px;transform:rotate(-2deg)}
+.bab .stk{font-size:5.5rem;text-align:center;filter:drop-shadow(4px 4px 0 rgba(59,31,14,.2))}
+.bab.tp{grid-template-columns:1fr}.bab .stk{animation:goyang 4s ease-in-out infinite}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.duo div{background:#fff8e6;border:3px solid var(--cok);border-radius:20px 8px 20px 8px;padding:20px;position:relative}
+.duo b{font:800 1.2rem "Trebuchet MS",sans-serif;display:block}
+.duo div:first-child{transform:rotate(-1.2deg)}.duo div:last-child{transform:rotate(1.2deg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px;margin-top:30px}
+.kartu{background:var(--krem);border:3px solid var(--cok);border-radius:10px 26px 10px 26px;padding:18px;box-shadow:6px 6px 0 var(--cok);transition:transform .2s}
+.kartu:nth-child(odd){transform:rotate(-1deg)}.kartu:nth-child(even){transform:rotate(1.2deg)}
+.kartu:hover{transform:rotate(0) translateY(-4px)}
+.toples{height:150px;border-radius:14px;background:var(--ora);display:grid;place-items:center;font-size:4rem;margin-bottom:12px;border:3px dashed var(--cok)}
+.toples{overflow:hidden}.toples img{width:100%;height:100%;object-fit:cover}
+.kartu:nth-child(3n+2) .toples{background:var(--teal)}.kartu:nth-child(3n) .toples{background:var(--kuning)}
+.kartu h3{font-size:1.25rem}.kartu .h{font:800 1.1rem "Trebuchet MS",sans-serif;color:var(--tomat);margin:6px 0 10px}
+.kartu .btn{padding:8px 14px;font-size:.9rem;margin:3px 3px 0 0;box-shadow:3px 3px 0 var(--cok)}
+.cara{background:var(--cok);color:var(--krem);clip-path:polygon(0 4%,100% 0,100% 96%,0 100%)}
+.cara .langkah{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:26px}
+.cara .langkah div{border:3px dashed var(--kuning);border-radius:18px;padding:22px}
+.cara .langkah b{font:800 1.3rem "Trebuchet MS",sans-serif;color:var(--kuning);display:block;margin-bottom:6px}
+details{background:var(--krem);border:3px solid var(--cok);border-radius:14px;margin-bottom:12px;padding:14px 18px}
+summary{font:800 1.05rem "Trebuchet MS",sans-serif;cursor:pointer}
+details[open]{background:#fff8e6}details p{margin-top:8px}
+.kontak{text-align:center}
+.kontak .acts{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.kontak .polar{max-width:300px;margin:0 auto 34px;transform:rotate(-2deg)}
+footer{background:var(--cok);color:var(--krem);text-align:center;padding:28px 22px;font-size:.95rem}
+footer img{width:60px;margin:0 auto 8px;border-radius:50%}
+@media(max-width:780px){
+.hero .wrap,.duo,.cara .langkah{grid-template-columns:1fr}
+.bab{grid-template-columns:1fr}.rel{padding-left:48px}.rel::before{left:14px}.scoot{font-size:1.8rem}
+nav .wrap{justify-content:center}nav b{width:100%;text-align:center;margin:0}
+.hero .polar{max-width:420px;margin:10px auto 0}.logo-s{width:84px}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.bab{opacity:1;transform:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<img src="img/logo.jpeg" alt="Logo SoBite Snack"><b>SoBite Snack</b>
+<a href="#cerita">Cerita Kami</a><a href="#produk">Produk</a><a href="#pesan">Cara Pesan</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a>
+</div></nav>
+
+<header class="hero" id="beranda"><div class="wrap">
+<div>
+<h1>Satu Gigitan, Berjuta Rasa.</h1>
+<p>Snack toples premium buatan tangan kami berdua. Dibuat pelan-pelan, dikemas rapi, dan siap menemani ngobrol, kerja, atau nonton malam-malam.</p>
+<div class="acts"><a class="btn" href="https://s.shopee.co.id/6filoRsdYI?share_channel_code=1" target="_blank" rel="noopener noreferrer" data-shopee>Beli di Shopee</a><a class="btn t" href="https://s.shopee.co.id/6filoRsdYI?share_channel_code=1" target="_blank" rel="noopener noreferrer" data-toped>Beli di Tokopedia</a></div>
+</div>
+<figure class="polar"><span class="bub">Eh, udah coba belum?</span>
+<img src="img/masak.png" alt="Dua pendiri SoBite sedang memasak di dapur" width="560" height="400">
+<figcaption>Dapur kami, bukan pabrik.</figcaption>
+<img class="logo-s" src="img/logo.jpeg" alt="">
+</figure>
+</div></header>
+
+<section class="cerita" id="cerita"><div class="wrap">
+<h2>Cerita Kami</h2>
+<p class="lead">SoBite bukan dari ide besar yang tiba-tiba datang. Ini cerita dua orang yang awalnya cuma rekan kerja. Gulir pelan-pelan, motornya ikut jalan.</p>
+<div class="rel" id="rel"><span class="scoot" id="scoot" aria-hidden="true">🛵</span>
+
+<article class="bab"><div><span class="tag">Awalnya</span><h3>Ketemu di meja kantor</h3><p>Kami kerja di kantor yang sama. Awalnya cuma saling sapa, lama-lama jadi teman makan siang, dan akhirnya jadi pasangan.</p></div><div class="stk" aria-hidden="true">🏢</div></article>
+
+<article class="bab"><div><span class="tag">Lalu</span><h3>Sama-sama keluar</h3><p>Nggak lama, kami berdua resign dalam waktu yang hampir bersamaan. Si cewek pindah ke kantor baru. Si cowok? Kepalanya sudah penuh rencana buka usaha.</p></div><div class="stk" aria-hidden="true">🚪</div></article>
+
+<article class="bab"><div><span class="tag">Yang nggak disangka</span><h3>Yang tadinya nggak suka bisnis</h3><p>Jujur, dia dulu bilang bisnis itu bukan dunianya. Tapi melihat pasangannya terus jatuh bangun tanpa menyerah, pelan-pelan dia ikut penasaran, lalu ikut suka.</p></div><div class="stk" aria-hidden="true">💭</div></article>
+
+<article class="bab"><div><span class="tag">Sekarang</span><h3>Dapur kecil, resep sendiri</h3><p>Satu jago masak, satu jago marketing. Dari dapur kecil kami, lahirlah SoBite Snack: camilan toples premium yang kami racik dan kemas sendiri.</p></div><figure class="polar"><img src="img/brand.png" alt="Pasangan pendiri memasang logo SoBite Snack" loading="lazy"></figure></article>
+
+<article class="bab"><div><span class="tag">Ke depan</span><h3>Mimpi yang kami titipkan di toples</h3><p>SoBite kami buat untuk membiayai pernikahan kami, dan supaya nanti kami punya lebih banyak waktu bersama keluarga. Ini juga langkah pertama, tempat kami belajar sebelum membuka usaha-usaha lain.</p></div><figure class="polar"><img src="img/toko.png" alt="Ilustrasi toko SoBite Snack" loading="lazy"></figure></article>
+</div>
+
+<div class="duo">
+<div><b>Si Jago Masak</b>Pencicip pertama dan paling galak. Resep baru baru lolos kalau dia sudah bilang "oke".</div>
+<div><b>Si Jago Marketing</b>Yang memikirkan kemasan, foto, dan cara supaya camilan ini sampai ke meja kamu.</div>
+</div>
+</div></section>
+
+<section id="produk"><div class="wrap">
+<h2>Produk Kami</h2>
+<p>Semua dalam toples, dikemas rapi, dan mudah dijadikan hadiah. Klik untuk lanjut ke toko online kami.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section class="cara" id="pesan"><div class="wrap">
+<h2>Cara Pesan</h2>
+<div class="langkah">
+<div><b>1. Pilih rasa</b>Lihat daftar produk di atas dan pilih yang paling bikin penasaran.</div>
+<div><b>2. Klik toko favoritmu</b>Kamu akan diarahkan ke Shopee atau Tokopedia kami.</div>
+<div><b>3. Bayar dan tunggu</b>Bayar lewat marketplace, lalu kami kemas dan kirim. Aman karena transaksi dijaga marketplace.</div>
+</div></div></section>
+
+<section id="faq"><div class="wrap" style="max-width:760px">
+<h2>Pertanyaan yang Sering Muncul</h2>
+<details><summary>Beli di mana?</summary><p>Lewat Shopee dan Tokopedia. Website ini tidak menerima pembayaran, jadi datamu tidak tersimpan di sini.</p></details>
+<details><summary>Berapa lama snack bisa disimpan?</summary><p>Rata Rata 6 bulan di toples tertutup.</p></details>
+<details><summary>Bisa untuk hampers atau hadiah?</summary><p>Bisa. Tulis kebutuhanmu lewat WhatsApp, nanti kami bantu.</p></details>
+<details><summary>Produknya halal?</summary><p>Produknya Halal ya, karena menggunakan bahan yang aman.</p></details>
+</div></section>
+
+<section class="kontak" id="kontak"><div class="wrap">
+<figure class="polar"><img src="img/jualan.png" alt="Pendiri SoBite mengemas pesanan" loading="lazy"></figure>
+<h2>Ngobrol sama kami</h2>
+<p>Mau tanya rasa, pesan banyak, atau sekadar menyapa? Kami balas sendiri.</p>
+<div class="acts"><a class="btn o" href="https://wa.me/6285111480905" target="_blank" rel="noopener noreferrer">WhatsApp kami</a><a class="btn" href="https://instagram.com/snacksobite" target="_blank" rel="noopener noreferrer">Instagram kami</a></div>
+</div></section>
+
+<footer><img src="img/logo.jpeg" alt="">SoBite Snack · Satu Gigitan, Berjuta Rasa<br>© <span id="th"></span> SoBite Snack</footer>
+
+<script>
+(function(){
+/* ===== DAFTAR PRODUK: edit di sini =====
+   nama   : nama produk
+   foto   : "img/namafile.jpg" (kosongkan "" kalau belum ada, akan tampil emoji)
+   emoji  : cadangan kalau foto kosong
+   harga  : teks harga, atau "Segera hadir"
+   shopee / toped : link toko. Kosongkan "" kalau tidak ada tombolnya */
+var produk=[
+{nama:"Chocoboom",foto:"img/Chocoboom.jpeg",emoji:"🍫",harga:"Rp 20.000",shopee:"https://s.shopee.co.id/BVI4XilBD?share_channel_code=1",toped:"https://s.shopee.co.id/BVI4XilBD?share_channel_code=1"},
+{nama:"Siomax",foto:"img/Siomax.jpeg",emoji:"🥟",harga:"Rp 20.000",shopee:"https://s.shopee.co.id/40i0dbXTTn?share_channel_code=1",toped:"https://s.shopee.co.id/40i0dbXTTn?share_channel_code=1"},
+{nama:"Tahu Walik",foto:"img/Waliq.jpeg",emoji:"🧀",harga:"Rp 20.000",shopee:"https://s.shopee.co.id/4fxhQnMBmX?share_channel_code=1",toped:"https://s.shopee.co.id/4fxhQnMBmX?share_channel_code=1"},
+];
+/* ===== akhir daftar produk ===== */
+var g=document.getElementById("grid");
+produk.forEach(function(p){
+var d=document.createElement("div");d.className="kartu";
+var t=document.createElement("div");t.className="toples";
+if(p.foto){var im=document.createElement("img");im.src=p.foto;im.alt="Foto "+p.nama;im.loading="lazy";t.append(im)}else{t.textContent=p.emoji}
+var h=document.createElement("h3");h.textContent=p.nama;
+var r=document.createElement("div");r.className="h";r.textContent=p.harga;
+d.append(t,h,r);
+[["Shopee",p.shopee,"o"],["Tokopedia",p.toped,"t"]].forEach(function(s){
+if(!s[1])return;
+var a=document.createElement("a");a.className="btn "+s[2];a.textContent=s[0];a.href=s[1];a.target="_blank";a.rel="noopener noreferrer";d.append(a)});
+g.append(d)});
+document.getElementById("th").textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll(".bab").forEach(function(b){io.observe(b)});
+var rel=document.getElementById("rel"),sc=document.getElementById("scoot");
+function geser(){var r=rel.getBoundingClientRect(),vh=innerHeight;
+var p=(vh*.45-r.top)/r.height;p=Math.max(0,Math.min(1,p));
+sc.style.top=(p*(r.height-44))+"px"}
+addEventListener("scroll",geser,{passive:true});addEventListener("resize",geser);geser();
+})();
+</script>
+</body>
+</html>
